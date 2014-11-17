@@ -1,0 +1,112 @@
+IBM InfoSphere BigInsights Technical Mastery Test v2
+
+1.	What is Big Data?
+Extremely large data sets that may be analyzed computationally to reveal patterns, trends, and associations, especially relating to human behavior and interactions.
+The key characteristics of big data differ from traditional enterprise data in the following ways:
+•	Volume: Very large data volumes measured in terabytes or petabytes
+•	Variety: Variety of structured, unstructured and semi-structured data
+•	Velocity: High velocity, rapidly changing data
+
+2.	Why IBM for Hadoop?
+InfoSphere® BigInsights, IBM®'s software platform for storing and analyzing “big data”.
+IBM InfoSphere BigInsights brings the power of Hadoop to the enterprise. Apache™ Hadoop® is the open source software framework, used to reliably manage large volumes of structured and unstructured data.
+IBM makes it simpler to use Hadoop to get value out of big data and build big data applications. It enhances open source technology to withstand the demands of your enterprise, adding administrative, discovery, development, provisioning, security, and support, along with best-in-class analytical capabilities. The result is a more user-friendly solution for complex, large scale projects.
+InfoSphere BigInsights, for Hadoop, empowers enterprises of all sizes to cost effectively manage and analyze big data – the massive volume, variety and velocity of data that consumers and businesses create every day. InfoSphere BigInsights helps increase operational efficiency by modernizing your data warehouse environment as query-able archive, allowing you to store and analyze large volumes of multi-structured data without straining the data warehouse.
+Open source technologies:
+You may already be familiar with certain open source projects, so explore these first. Open source projects included with BigInsights :
+
+•	Apache Hadoop(including the Hadoop Distributed File System (HDFS), MapReduce
+framework, and common utilities), a software framework for data-intensive applications that
+exploit distributed computing environments
+
+• Pig, a high-level programming language and runtime environment for Hadoop
+
+• Jaql,a high-level query language based on JavaScript Object Notation (JSON), which also supports SQL.
+
+• Hive,a data warehouse infrastructure designed to support batch queries and analysis of files managed by Hadoop
+
+• HBase,a column-oriented data storage environment designed to support large, sparsely
+populated tables in Hadoop
+
+• Flume,a facility for collecting and loading data into Hadoop
+
+• Lucene,text search and indexing technology
+
+• Avro,data serialization technology
+
+• ZooKeeper,a coordination service for distributed applications
+
+• Oozie,workflow/job orchestration technology
+
+
+IBM technologies:
+In addition to open source software, BigInsights includes a number of IBM-developed technologies to help you become productive quickly. Examples include a text analysis engine and supporting development tool, a data exploration tool for business analysts, enterprise software integration, and various platform enhancements to simplify administration and help improve runtime performance. 
+
+
+3.	What is Credential store?
+A credential store is a library of security data. A credential can hold public key certificates, username and password combinations, or tickets.
+
+Credentials are utilized at the time of authentication, when subjects are populated with principals, and also during authorization, when identifying the actions the subjects are able to perform.
+
+4.	what is Kerberos?
+Kerberos is a secure method for authenticating a request for a service in a computer network.
+Kerberos lets a user request an encrypted "ticket" from an authentication process that can then be used to request a particular service from a server. The user's password does not have to pass through the network.
+Kerberos is a computer network authentication protocol which works on the basis of 'tickets' to allow nodes communicating over a non-secure network to prove their identity to one another in a secure manner.
+Using Kerberos authentication allows you to access the web console with REST APIs. Non-REST APIs do not require a keytab or ticket cache, only a user ID and password is needed to authenticate.
+
+Briefly and approximately, here's how Kerberos works:
+1.	Suppose you want to access a server on another computer (which you may get to by sending a Telnet or similar login request). You know that this server requires a Kerberos "ticket" before it will honor your request.
+2.	To get your ticket, you first request authentication from the Authentication Server (AS). The Authentication Server creates a "session key" (which is also an encryption key) basing it on your password (which it can get from your user name) and a random value that represents the requested service. The session key is effectively a "ticket-granting ticket."
+3.	You next send your ticket-granting ticket to a ticket-granting server (TGS). The TGS may be physically the same server as the Authentication Server, but it's now performing a different service.The TGS returns the ticket that can be sent to the server for the requested service.
+4.	The service either rejects the ticket or accepts it and performs the service.
+5.	Because the ticket you received from the TGS is time-stamped, it allows you to make additional requests using the same ticket within a certain time period (typically, eight hours) without having to be reauthenticated. Making the ticket valid for a limited time period make it less likely that someone else will be able to use it later.
+The actual process is much more complicated than just described. The user procedure may vary somewhat according to implementation.
+
+5.	Traditional Vs BigData.
+
+Structured Data: Data that resides within the fixed confines of a record or file is known as structured data. Owing to the fact that structured data – even in large volumes – can be entered, stored, queried, and analyzed in a simple and straightforward manner, this type of data is best served by a traditional database.
+
+Unstructured Data: Data that comes from a variety of sources, such as emails, text documents, videos, photos, audio files, and social media posts, is referred to as unstructured data. Being both complex and voluminous, unstructured data cannot be handled or efficiently queried by a traditional database. Hadoop’s ability to join, aggregate, and analyze vast stores of multi-source data without having to structure it first allows organizations to gain deeper insights quickly. Thus Hadoop is a perfect fit for companies looking to store, manage, and analyze large volumes of unstructured data.
+
+Companies whose data workloads are constant and predictable will be better served by a traditional database.
+
+Companies challenged by increasing data demands will want to take advantage of Hadoop’s scalable infrastructure. Scalability allows servers to be added on demand to accommodate growing workloads.
+Hadoop was designed for large distributed data processing that addresses every file in the database. And that type of processing takes time. For tasks where fast performance isn’t critical, such as running end-of-day reports to review daily transactions, scanning historical data, and performing analytics where a slower time-to-insight is acceptable, Hadoop is ideal.
+On the other hand, in cases where organizations rely on time-sensitive data analysis, a traditional database is the better fit. That’s because shorter time-to -insight isn’t about analyzing large unstructured datasets, which Hadoop does so well. It’s about analyzing smaller data sets in real or near-real time, which is what traditional databases are well equipped to do.
+Traditional Analytics is built on top of the relational data model,  relationships between the subjects of interests have been created  inside the system and the  analysis is done based on them.
+In typical world, it is very difficult to establish  relationship between all the information in a formal way, and  hence unstructured data in the form  images, videos, Mobile generated information, RFID etc... have to be considered in big data analytics. Most of the big data analytics database are based out  Columnar databases.
+
+6.	What is Hadoop?
+Apache™ Hadoop® is an open source software project that enables the distributed processing of large data sets across clusters of commodity servers. It is designed to scale up from a single server to thousands of machines, with a very high degree of fault tolerance. Rather than relying on high-end hardware, the resiliency of these clusters comes from the software’s ability to detect and handle failures at the application layer.
+
+
+Apache Hadoop has two pillars:
+YARN - Yet Another Resource Negotiator (YARN) assigns CPU, memory, and storage to applications running on a Hadoop cluster. The first generation of Hadoop could only run MapReduce applications. YARN enables other application frameworks (like Spark) to run on Hadoop as well, which opens up a wealth of possibilities.
+HDFS - Hadoop Distributed File System (HDFS) is a file system that spans all the nodes in a Hadoop cluster for data storage. It links together the file systems on many local nodes to make them into one big file system.
+Hadoop is supplemented by an ecosystem of Apache projects, such as Pig, Hive and Zookeeper, that extend the value of Hadoop and improves its usability. Hadoop enables a computing solution that is:
+•	Scalable– New nodes can be added as needed, and added without needing to change data formats, how data is loaded, how jobs are written, or the applications on top.
+•	Cost effective– Hadoop brings massively parallel computing to commodity servers. The result is a sizeable decrease in the cost per terabyte of storage, which in turn makes it affordable to model all your data.
+•	Flexible– Hadoop is schema-less, and can absorb any type of data, structured or not, from any number of sources. Data from multiple sources can be joined and aggregated in arbitrary ways enabling deeper analyses than any one system can provide.
+•	Fault tolerant– When you lose a node, the system redirects work to another location of the data and continues processing without missing a fright beat.
+7.	What is MapReduce?
+MapReduce is the heart of Hadoop®. It is this programming paradigm that allows for massive scalability across hundreds or thousands of servers in a Hadoop cluster. The MapReduce concept is fairly simple to understand for those who are familiar with clustered scale-out data processing solutions.
+For people new to this topic, it can be somewhat difficult to grasp, because it’s not typically something people have been exposed to previously. If you’re new to Hadoop’s MapReduce jobs, don’t worry: we’re going to describe it in a way that gets you up to speed quickly. 
+The term MapReduce actually refers to two separate and distinct tasks that Hadoop programs perform. The first is the map job, which takes a set of data and converts it into another set of data, where individual elements are broken down into tuples (key/value pairs). The reduce job takes the output from a map as input and combines those data tuples into a smaller set of tuples. As the sequence of the name MapReduce implies, the reduce job is always performed after the map job. 
+
+An example of MapReduce
+Let’s look at a simple example. Assume you have five files, and each file contains two columns (a key and a value in Hadoop terms) that represent a city and the corresponding temperature recorded in that city for the various measurement days. Of course we’ve made this example very simple so it’s easy to follow. You can imagine that a real application won’t be quite so simple, as it’s likely to contain millions or even billions of rows, and they might not be neatly formatted rows at all; in fact, no matter how big or small the amount of data you need to analyze, the key principles we’re covering here remain the same. Either way, in this example, city is the key and tempera¬ture is the value. 
+Toronto, 20 
+Whitby, 25 
+New York, 22 
+Rome, 32 
+Toronto, 4 
+Rome, 33 
+New York, 18 
+Out of all the data we have collected, we want to find the maximum tem¬perature for each city across all of the data files (note that each file might have the same city represented multiple times). Using the MapReduce framework, we can break this down into five map tasks, where each mapper works on one of the five files and the mapper task goes through the data and returns the maximum temperature for each city. For example, the results produced from one mapper task for the data above would look like this: 
+(Toronto, 20) (Whitby, 25) (New York, 22) (Rome, 33) 
+Let’s assume the other four mapper tasks (working on the other four files not shown here) produced the following intermediate results: 
+(Toronto, 18) (Whitby, 27) (New York, 32) (Rome, 37)(Toronto, 32) (Whitby, 20) (New York, 33) (Rome, 38)(Toronto, 22) (Whitby, 19) (New York, 20) (Rome, 31)(Toronto, 31) (Whitby, 22) (New York, 19) (Rome, 30) 
+All five of these output streams would be fed into the reduce tasks, which combine the input results and output a single value for each city, producing a final result set as follows: 
+(Toronto, 32) (Whitby, 27) (New York, 33) (Rome, 38) 
+As an analogy, you can think of map and reduce tasks as the way a cen¬sus was conducted in Roman times, where the census bureau would dis¬patch its people to each city in the empire. Each census taker in each city would be tasked to count the number of people in that city and then return their results to the capital city. There, the results from each city would be reduced to a single count (sum of all cities) to determine the overall popula¬tion of the empire. This mapping of people to cities, in parallel, and then com¬bining the results (reducing) is much more efficient than sending a single per¬son to count every person in the empire in a serial fashion. 
+
