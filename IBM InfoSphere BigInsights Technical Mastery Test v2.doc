@@ -1,7 +1,8 @@
 IBM InfoSphere BigInsights Technical Mastery Test v2
 
 1.	What is Big Data?
-Extremely large data sets that may be analyzed computationally to reveal patterns, trends, and associations, especially relating to human behavior and interactions.
+Extremely large data sets that may be analyzed computationally to reveal patterns, trends, and associations, 
+especially relating to human behavior and interactions.
 The key characteristics of big data differ from traditional enterprise data in the following ways:
 •	Volume: Very large data volumes measured in terabytes or petabytes
 •	Variety: Variety of structured, unstructured and semi-structured data
@@ -9,11 +10,20 @@ The key characteristics of big data differ from traditional enterprise data in t
 
 2.	Why IBM for Hadoop?
 InfoSphere® BigInsights, IBM®'s software platform for storing and analyzing “big data”.
-IBM InfoSphere BigInsights brings the power of Hadoop to the enterprise. Apache™ Hadoop® is the open source software framework, used to reliably manage large volumes of structured and unstructured data.
-IBM makes it simpler to use Hadoop to get value out of big data and build big data applications. It enhances open source technology to withstand the demands of your enterprise, adding administrative, discovery, development, provisioning, security, and support, along with best-in-class analytical capabilities. The result is a more user-friendly solution for complex, large scale projects.
-InfoSphere BigInsights, for Hadoop, empowers enterprises of all sizes to cost effectively manage and analyze big data – the massive volume, variety and velocity of data that consumers and businesses create every day. InfoSphere BigInsights helps increase operational efficiency by modernizing your data warehouse environment as query-able archive, allowing you to store and analyze large volumes of multi-structured data without straining the data warehouse.
+IBM InfoSphere BigInsights brings the power of Hadoop to the enterprise. Apache™ Hadoop® is the open source 
+software framework, used to reliably manage large volumes of structured and unstructured data.
+IBM makes it simpler to use Hadoop to get value out of big data and build big data applications. 
+It enhances open source technology to withstand the demands of your enterprise, adding administrative, 
+discovery, development, provisioning, security, and support, along with best-in-class analytical capabilities. 
+The result is a more user-friendly solution for complex, large scale projects.
+InfoSphere BigInsights, for Hadoop, empowers enterprises of all sizes to cost effectively manage and analyze big data 
+– the massive volume, variety and velocity of data that consumers and businesses create every day. 
+InfoSphere BigInsights helps increase operational efficiency by modernizing your data warehouse environment as query-able archive,
+allowing you to store and analyze large volumes of multi-structured data without straining the data warehouse.
+
 Open source technologies:
-You may already be familiar with certain open source projects, so explore these first. Open source projects included with BigInsights :
+You may already be familiar with certain open source projects, so explore these first. 
+Open source projects included with BigInsights :
 
 •	Apache Hadoop(including the Hadoop Distributed File System (HDFS), MapReduce
 framework, and common utilities), a software framework for data-intensive applications that
